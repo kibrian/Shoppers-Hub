@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 .wrapper{
@@ -69,4 +70,173 @@ header{
 p{
     color: bisque;
     font-size: 40px;
+}
+
+/*the form*/
+body{
+    height: 100vh;
+    background: #0062e6 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    overflow: hidden;
+    border: 0 !important;
+    border-radius: 20px !important;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.1);
+}
+.img-left{
+    width: 45%;
+    background: url('/images/nice-1.jpg');
+    background-size: cover;
+}
+.card-body{
+    padding: 2rem;
+}
+.title{
+    margin-bottom: 2rem;
+}
+
+.account-page{
+    padding: 490px ;
+    background:linear-gradient(rgba(114, 111, 111, 0.4),rgba(109, 107, 107, 0.4)), url(/images/image19.jpg);
+    background-size: cover; 
+}
+
+.form-container{
+    background: #ffffff;
+    width: 250px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow:  0 0 20px 0px rgba(0,0,0,0.3);
+    border-radius: 9px;
+    overflow: hidden;
+
+}
+
+.form-container span{
+    font-weight: bold;
+    padding:  0 10px;
+    color: #555555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn{
+    display: inline-block;
+}
+
+.form-container form{
+    max-width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #cccccc;
+}
+
+form .btn{
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+form .btn:focus{
+    outline: none;
+}
+
+
+#LoginForm{
+
+    left:-300px;
+}
+
+#RegForm{
+
+    left:0px;
+}
+
+form a{
+    font-size: 12px;
+}
+
+
+#Indicator{
+    width: 100px;
+    border: none;
+    background: coral;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+.testimonial{
+    padding-top: 100px;
+}
+
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-weight: 34px;
+    color: #ff523b;
+}
+
+.col-3 p{
+    font-size: 12px;
+    margin: 12px  0;
+    color: #777;
+}
+
+.testimonial .col-3 h3{
+    font-weight: 600px;
+    color: #555;
+    font-size: 16px;    
+}
+
+
+.brands{
+    margin: 100px auto;
+}
+
+.col-5{
+    width: 160px;
+}
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover{
+    filter: grayscale(0);
 }
